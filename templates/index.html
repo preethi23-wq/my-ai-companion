@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My AI Companion</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preethi AI Companion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-  <div class="chat-container">
-    <h2>🤖 Nova - Your AI Companion</h2>
-    <div id="chat-box"></div>
+  <div class="container">
+    <h1>Preethi AI Companion 💖</h1>
+    <div class="chat-box" id="chat-box"></div>
     <div class="input-area">
-      <input type="text" id="user-input" placeholder="Say something..." />
-      <button onclick="sendMessage()">Send</button>
+      <input type="text" id="user-input" placeholder="Ask me anything..." />
+      <button onclick="sendMessage()">➤</button>
     </div>
   </div>
-  <script src="/static/script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
